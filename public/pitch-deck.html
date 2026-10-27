@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquaVane — 7-Slide Chakravyuh Hackathon Pitch Deck (Team Labyrinth.exe)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #0B192C;
+      color: #F8FAFC;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .topo-bg {
+      background-color: #0B192C;
+      background-image:
+        radial-gradient(rgba(0, 180, 216, 0.09) 1px, transparent 1px),
+        radial-gradient(rgba(45, 106, 79, 0.08) 1px, #0B192C 1px);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+    }
+    @media print {
+      @page {
+        size: 16in 9in;
+        margin: 0;
+      }
+      body {
+        background: #0B192C !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .slide-section {
+        display: flex !important;
+        width: 16in !important;
+        height: 9in !important;
+        page-break-after: always;
+        break-after: page;
+      }
+    }
+  </style>
+</head>
+<body class="topo-bg min-h-screen flex flex-col justify-between">
+  <!-- Top Interactive Control Bar (Hidden when printing to PDF) -->
+  <header class="no-print h-14 bg-[#07111E]/95 border-b border-cyan-500/30 px-6 flex items-center justify-between sticky top-0 z-50 backdrop-blur-md">
+    <div class="flex items-center gap-3">
+      <span class="font-display font-extrabold text-lg text-white">Aqua<span class="text-[#00B4D8]">Vane</span></span>
+      <span class="text-xs font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">Team Labyrinth.exe</span>
+      <span class="text-xs text-slate-400 hidden sm:inline">Chakravyuh Hackathon • 7-Slide Pitch Deck</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <button onclick="window.print()" class="px-3 py-1.5 rounded-lg bg-[#00B4D8] hover:bg-cyan-400 text-[#0B192C] font-bold text-xs transition">
+        Print / Export 7-Slide PDF
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto w-full py-8 px-4 space-y-12">
+    <!-- SLIDE 1: Title & Team Introduction -->
+    <section class="slide-section bg-[#0B192C] border-2 border-cyan-500/40 rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col justify-between min-h-[680px] relative overflow-hidden">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/15 border border-[#00B4D8]/50 text-[#00B4D8] text-xs font-mono font-semibold">
+          SLIDE 01 / 07 • GEOSPATIAL INTELLIGENCE &amp; HYDROLOGY
+        </div>
+        <div class="px-4 py-2 rounded-xl bg-[#1C2541] border-2 border-dashed border-[#00B4D8]/60 text-xs font-mono font-bold text-cyan-300">
+          Hackathon Name: Chakravyuh [Insert Chakravyuh Logo Here]
+        </div>
+      </div>
+
+      <div class="my-auto py-6 space-y-5">
+        <div class="space-y-2">
+          <div class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-bold">
+            Proposed Solution Name: AquaVane
+          </div>
+          <h1 class="font-display font-extrabold text-5xl md:text-6xl text-white tracking-tight">
+            Aqua<span class="text-[#00B4D8]">Vane</span>
+          </h1>
+          <h2 class="font-display font-bold text-2xl md:text-3xl text-[#00B4D8] pt-1">
+            Problem Title: Watershed Restoration Prioritisation with Explainable Evidence
+          </h2>
+        </div>
+
+        <div class="bg-[#1C2541]/90 border-l-4 border-[#00B4D8] rounded-r-2xl p-5 shadow-lg">
+          <div class="text-xs font-mono uppercase tracking-wider text-cyan-300 font-bold mb-1">
+            Objective
+          </div>
+          <p class="text-sm md:text-base text-slate-100 leading-relaxed">
+            Build a geospatial decision-support tool ranking micro-watersheds for restoration using terrain, land cover, rainfall, and downstream exposure indicators. Multi-criteria spatial evaluation combining DEM slope hydrology, runoff coefficients, and population vulnerability with interactive weight sensitivity analysis.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-[#1C2541]/90 backdrop-blur-md border border-emerald-500/40 rounded-2xl p-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div class="font-display font-extrabold text-base text-white">
+            Team Name: <span class="text-emerald-400">Labyrinth.exe</span>
+          </div>
+          <div class="text-xs font-mono text-slate-300">
+            Team Members &amp; Registration Numbers (Click to edit placeholders):
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+          <div class="bg-[#0B192C] border border-[#00B4D8]/50 rounded-xl p-3.5">
+            <div class="font-bold text-white text-sm">1. Sajan Sivakumar</div>
+            <div class="font-mono text-[#00B4D8] mt-1">25BCS7084</div>
+          </div>
+          <div class="bg-[#0B192C] border border-slate-700 rounded-xl p-3.5" contenteditable="true">
+            <div class="font-bold text-slate-200 text-sm">2. [Team Member 2 Name]</div>
+            <div class="font-mono text-slate-400 mt-1">[Registration No.]</div>
+          </div>
+          <div class="bg-[#0B192C] border border-slate-700 rounded-xl p-3.5" contenteditable="true">
+            <div class="font-bold text-slate-200 text-sm">3. [Team Member 3 Name]</div>
+            <div class="font-mono text-slate-400 mt-1">[Registration No.]</div>
+          </div>
+          <div class="bg-[#0B192C] border border-slate-700 rounded-xl p-3.5" contenteditable="true">
+            <div class="font-bold text-slate-200 text-sm">4. [Team Member 4 Name]</div>
+            <div class="font-mono text-slate-400 mt-1">[Registration No.]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 2: Problem Statement, Proposed Solution & Unique Value Proposition -->
+    <section class="slide-section bg-[#0B192C] border-2 border-cyan-500/40 rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col justify-between min-h-[680px]">
+      <div class="border-b border-slate-800 pb-4 flex items-center justify-between">
+        <h2 class="font-display font-extrabold text-2xl md:text-3xl text-white">
+          Problem Statement &amp; Proposed Solution — AquaVane
+        </h2>
+        <span class="text-xs font-mono text-[#00B4D8]">SLIDE 02 / 07</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 my-auto py-4">
+        <div class="lg:col-span-6 flex flex-col justify-between gap-5">
+          <div class="bg-white/95 text-slate-900 rounded-2xl p-6 shadow-xl border-l-8 border-red-500">
+            <h3 class="font-display font-extrabold text-lg text-slate-900 mb-3">
+              Problem Statement:
+            </h3>
+            <ul class="space-y-2.5 text-sm text-slate-800 list-disc pl-5 leading-relaxed">
+              <li>Tree planting, erosion control and runoff interventions compete for limited funding.</li>
+              <li>Selecting sites from a single map layer can overlook slope, upstream connectivity, land cover, settlement exposure and data uncertainty.</li>
+              <li>Goal: Build a geospatial decision-support tool that ranks candidate micro-watersheds for restoration using openly available terrain, land-cover, rainfall and settlement indicators with configurable policy weights.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white/95 text-slate-900 rounded-2xl p-6 shadow-xl border-l-8 border-[#00B4D8]">
+            <h3 class="font-display font-extrabold text-lg text-slate-900 mb-2">
+              Proposed Solution Idea:
+            </h3>
+            <p class="text-sm text-slate-800 leading-relaxed font-medium">
+              Build a GIS-based web platform that ranks micro-watersheds for restoration using terrain, rainfall, land cover and downstream exposure data, with explainable scores and interactive policy simulations.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 bg-[#1C2541]/90 border border-[#00B4D8]/40 rounded-2xl p-6 flex flex-col justify-between space-y-3">
+          <h3 class="font-display font-extrabold text-lg text-[#00B4D8]">
+            Unique Value Proposition:
+          </h3>
+          <div class="space-y-3 text-sm">
+            <div class="bg-[#0B192C] border border-slate-700 rounded-xl p-3.5">
+              <strong class="text-[#00B4D8]">Interactive GIS Dashboard:</strong> Visualise and explore restoration priorities on a live map.
+            </div>
+            <div class="bg-[#0B192C] border border-slate-700 rounded-xl p-3.5">
+              <strong class="text-emerald-400">Smart Priority Ranking:</strong> Identify the most critical watersheds using multiple environmental indicators.
+            </div>
+            <div class="bg-[#0B192C] border border-slate-700 rounded-xl p-3.5">
+              <strong class="text-[#00B4D8]">Explainable Evidence:</strong> Understand why each watershed is prioritised through indicator-level score breakdowns.
+            </div>
+            <div class="bg-[#0B192C] border border-slate-700 rounded-xl p-3.5">
+              <strong class="text-emerald-400">Policy Scenario Simulator:</strong> Compare restoration strategies by adjusting weights and analysing ranking changes.
+            </div>
+            <div class="bg-[#0B192C] border border-slate-700 rounded-xl p-3.5">
+              <strong class="text-amber-400">Uncertainty Awareness:</strong> Highlight data limitations and ranking reliability to support informed decisions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 3: Technology Stack & System Architecture -->
+    <section class="slide-section bg-[#0B192C] border-2 border-cyan-500/40 rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col justify-between min-h-[680px]">
+      <div class="border-b border-slate-800 pb-4 flex items-center justify-between">
+        <h2 class="font-display font-extrabold text-2xl md:text-3xl text-white">
+          Technology Stack — Building the Geospatial Intelligence Platform
+        </h2>
+        <span class="text-xs font-mono text-[#00B4D8]">SLIDE 03 / 07</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-auto py-4 text-sm">
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-5 shadow-lg border-t-4 border-[#00B4D8]">
+          <div class="font-display font-extrabold text-base text-slate-900 mb-2">
+            Frontend — React.js + TypeScript:
+          </div>
+          <p class="text-slate-700 leading-relaxed">
+            Builds an interactive dashboard with watershed rankings, filter controls, policy-weight sliders and detailed site analysis.
+          </p>
+        </div>
+
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-5 shadow-lg border-t-4 border-[#2D6A4F]">
+          <div class="font-display font-extrabold text-base text-slate-900 mb-2">
+            Geospatial Visualisation — Leaflet.js:
+          </div>
+          <p class="text-slate-700 leading-relaxed">
+            Displays watershed boundaries, colour-coded priority zones, drainage networks and selectable map layers.
+          </p>
+        </div>
+
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-5 shadow-lg border-t-4 border-[#00B4D8]">
+          <div class="font-display font-extrabold text-base text-slate-900 mb-2">
+            Backend — Python + FastAPI:
+          </div>
+          <p class="text-slate-700 leading-relaxed">
+            Exposes REST APIs for watershed data, priority-score calculations, scenario comparisons and site-specific explanations.
+          </p>
+        </div>
+
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-5 shadow-lg border-t-4 border-[#2D6A4F]">
+          <div class="font-display font-extrabold text-base text-slate-900 mb-2">
+            GIS &amp; Hydrological Processing — GeoPandas, Rasterio &amp; WhiteboxTools:
+          </div>
+          <p class="text-slate-700 leading-relaxed">
+            Processes elevation and land-cover rasters, calculates slope and flow accumulation, and derives watershed-level environmental indicators.
+          </p>
+        </div>
+
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-5 shadow-lg border-t-4 border-[#00B4D8]">
+          <div class="font-display font-extrabold text-base text-slate-900 mb-2">
+            Database — PostgreSQL + PostGIS:
+          </div>
+          <p class="text-slate-700 leading-relaxed">
+            Stores watershed geometries, calculated indicators, rankings, data-source metadata and saved policy scenarios.
+          </p>
+        </div>
+
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-5 shadow-lg border-t-4 border-[#2D6A4F]">
+          <div class="font-display font-extrabold text-base text-slate-900 mb-2">
+            Charts &amp; Analytics — Recharts + NumPy/Pandas:
+          </div>
+          <p class="text-slate-700 leading-relaxed">
+            Visualises indicator contributions, compares policy scenarios and performs efficient weighted-score calculations.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-r from-[#1C2541] via-[#123544] to-[#2D6A4F] border border-[#00B4D8]/60 rounded-2xl p-5 text-center shadow-lg">
+        <div class="text-xs font-mono uppercase tracking-wider text-cyan-300 font-bold mb-1">
+          Architecture Flow Diagram:
+        </div>
+        <div class="font-display font-extrabold text-base md:text-lg text-white">
+          React + Leaflet → FastAPI → Python GIS &amp; Scoring Engine → PostGIS / Processed Geospatial Datasets
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 4: Geospatial Data Pipeline & Decision Intelligence -->
+    <section class="slide-section bg-[#0B192C] border-2 border-cyan-500/40 rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col justify-between min-h-[680px]">
+      <div class="border-b border-slate-800 pb-4 flex items-center justify-between">
+        <h2 class="font-display font-extrabold text-2xl md:text-3xl text-white">
+          From Raw Environmental Data to Explainable Restoration Priorities
+        </h2>
+        <span class="text-xs font-mono text-[#00B4D8]">SLIDE 04 / 07</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-auto py-6 text-sm">
+        <div class="bg-[#1C2541] border-2 border-[#00B4D8]/50 rounded-2xl p-5 space-y-2">
+          <div class="font-display font-extrabold text-base text-[#00B4D8]">
+            1. Open Data Integration:
+          </div>
+          <p class="text-slate-100 leading-relaxed">
+            Acquire watershed boundaries from India-WRIS, land-cover data from ESA WorldCover, elevation data from USGS SRTM, rainfall from Copernicus ERA5, and population data from an appropriate documented source.
+          </p>
+        </div>
+
+        <div class="bg-[#1C2541] border-2 border-[#00B4D8]/50 rounded-2xl p-5 space-y-2">
+          <div class="font-display font-extrabold text-base text-[#00B4D8]">
+            2. Spatial Preprocessing:
+          </div>
+          <p class="text-slate-100 leading-relaxed">
+            Align coordinate reference systems, clip datasets to the study area, handle missing data, and calculate statistics for each micro-watershed.
+          </p>
+        </div>
+
+        <div class="bg-[#1C2541] border-2 border-[#00B4D8]/50 rounded-2xl p-5 space-y-2">
+          <div class="font-display font-extrabold text-base text-[#00B4D8]">
+            3. Environmental Indicator Extraction:
+          </div>
+          <p class="text-slate-100 leading-relaxed">
+            Derive slope and flow accumulation from DEMs; estimate vegetation deficit from land cover; calculate rainfall indicators, runoff potential and downstream population exposure.
+          </p>
+        </div>
+
+        <div class="bg-[#1C2541] border-2 border-emerald-500/50 rounded-2xl p-5 space-y-2">
+          <div class="font-display font-extrabold text-base text-emerald-400">
+            4. MCDA-Based Priority Scoring:
+          </div>
+          <p class="text-slate-100 leading-relaxed">
+            Normalise indicators to a common scale and combine them using configurable policy weights to rank watersheds by restoration priority.
+          </p>
+        </div>
+
+        <div class="bg-[#1C2541] border-2 border-emerald-500/50 rounded-2xl p-5 space-y-2">
+          <div class="font-display font-extrabold text-base text-emerald-400">
+            5. Explainable &amp; Uncertainty-Aware Analysis:
+          </div>
+          <p class="text-slate-100 leading-relaxed">
+            Show each indicator's score contribution, source resolution, data gaps and ranking sensitivity under alternative weights.
+          </p>
+        </div>
+
+        <div class="bg-[#1C2541] border-2 border-emerald-500/50 rounded-2xl p-5 space-y-2">
+          <div class="font-display font-extrabold text-base text-emerald-400">
+            6. Interactive Decision Support:
+          </div>
+          <p class="text-slate-100 leading-relaxed">
+            Display ranked watersheds on Leaflet maps, compare policy scenarios, identify potential restoration interventions and export evidence-based reports.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 5: Feasibility and Viability -->
+    <section class="slide-section bg-[#0B192C] border-2 border-cyan-500/40 rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col justify-between min-h-[680px]">
+      <div class="border-b border-slate-800 pb-4 flex items-center justify-between">
+        <h2 class="font-display font-extrabold text-2xl md:text-3xl text-white">
+          Feasibility &amp; Viability — Commercial Potential, Challenges &amp; Strategies
+        </h2>
+        <span class="text-xs font-mono text-[#00B4D8]">SLIDE 05 / 07</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-auto py-6 text-sm">
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-6 shadow-xl border-l-8 border-[#00B4D8]">
+          <h3 class="font-display font-extrabold text-lg text-slate-900 mb-3">
+            Feasibility:
+          </h3>
+          <ul class="space-y-2 text-slate-800 list-disc pl-5 leading-relaxed">
+            <li>Uses publicly available environmental datasets and open-source technologies.</li>
+            <li>Can be developed using Python, GIS tools, React, and FastAPI.</li>
+            <li>Scalable to additional regions and datasets.</li>
+          </ul>
+        </div>
+
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-6 shadow-xl border-l-8 border-[#2D6A4F]">
+          <h3 class="font-display font-extrabold text-lg text-slate-900 mb-3">
+            Commercial Feasibility:
+          </h3>
+          <ul class="space-y-2 text-slate-800 list-disc pl-5 leading-relaxed">
+            <li>Low initial development cost using open-source tools.</li>
+            <li>Potential users include government agencies, NGOs, and environmental consultancies.</li>
+            <li>Revenue through subscriptions, customised reports, and institutional licensing.</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#1C2541] text-white rounded-2xl p-6 shadow-xl border-l-8 border-amber-500">
+          <h3 class="font-display font-extrabold text-lg text-amber-400 mb-3">
+            Challenges:
+          </h3>
+          <ul class="space-y-2 text-slate-100 list-disc pl-5 leading-relaxed">
+            <li>Incomplete or inconsistent regional datasets.</li>
+            <li>Different spatial resolutions and data update frequencies.</li>
+            <li>Limited ground-level validation.</li>
+            <li>Processing large geospatial datasets efficiently.</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#1C2541] text-white rounded-2xl p-6 shadow-xl border-l-8 border-emerald-400">
+          <h3 class="font-display font-extrabold text-lg text-emerald-400 mb-3">
+            Strategy:
+          </h3>
+          <ul class="space-y-2 text-slate-100 list-disc pl-5 leading-relaxed">
+            <li>Start with a pilot watershed region and expand gradually.</li>
+            <li>Standardise and validate datasets before analysis.</li>
+            <li>Use explainable scoring and uncertainty indicators.</li>
+            <li>Collaborate with local experts and agencies to validate results.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 6: Impact and Benefits -->
+    <section class="slide-section bg-[#0B192C] border-2 border-cyan-500/40 rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col justify-between min-h-[680px]">
+      <div class="border-b border-slate-800 pb-4 flex items-center justify-between">
+        <h2 class="font-display font-extrabold text-2xl md:text-3xl text-white">
+          Impact &amp; Benefits — Target Users, Economic, Environmental &amp; Strategic Value
+        </h2>
+        <span class="text-xs font-mono text-[#00B4D8]">SLIDE 06 / 07</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-auto py-6 text-sm">
+        <div class="bg-[#1C2541] border border-[#00B4D8]/50 rounded-2xl p-6 space-y-3">
+          <h3 class="font-display font-extrabold text-lg text-[#00B4D8]">
+            Direct Impact on Target Users:
+          </h3>
+          <ul class="space-y-2.5 text-slate-100 list-disc pl-5 leading-relaxed">
+            <li><strong>Government &amp; Planning Departments:</strong> Identify and prioritise micro-watersheds requiring restoration.</li>
+            <li><strong>Environmental Agencies:</strong> Access data-driven insights for targeted conservation.</li>
+            <li><strong>Local Communities &amp; Farmers:</strong> Support better soil conservation, water management, and sustainable land use.</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#1C2541] border border-amber-500/50 rounded-2xl p-6 space-y-3">
+          <h3 class="font-display font-extrabold text-lg text-amber-400">
+            Economic Benefits:
+          </h3>
+          <ul class="space-y-2.5 text-slate-100 list-disc pl-5 leading-relaxed">
+            <li>Optimises restoration budgets by directing funds towards high-priority areas.</li>
+            <li>Reduces resource wastage through evidence-based project selection.</li>
+            <li>Supports long-term savings by helping prevent soil erosion and land degradation.</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#1C2541] border border-emerald-500/50 rounded-2xl p-6 space-y-3">
+          <h3 class="font-display font-extrabold text-lg text-emerald-400">
+            Environmental Benefits:
+          </h3>
+          <ul class="space-y-2.5 text-slate-100 list-disc pl-5 leading-relaxed">
+            <li>Helps identify areas vulnerable to erosion and excessive runoff.</li>
+            <li>Supports vegetation recovery, soil conservation, and groundwater recharge planning.</li>
+            <li>Promotes sustainable watershed and ecosystem management.</li>
+          </ul>
+        </div>
+
+        <div class="bg-[#1C2541] border border-cyan-400/50 rounded-2xl p-6 space-y-3">
+          <h3 class="font-display font-extrabold text-lg text-cyan-300">
+            Strategic Benefits:
+          </h3>
+          <ul class="space-y-2.5 text-slate-100 list-disc pl-5 leading-relaxed">
+            <li>Provides transparent, explainable restoration-priority rankings.</li>
+            <li>Enables policy scenario testing by adjusting decision-making weights.</li>
+            <li>Supports data-driven planning, monitoring, and long-term restoration strategies.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDE 7: Datasets Used -->
+    <section class="slide-section bg-[#0B192C] border-2 border-cyan-500/40 rounded-3xl p-8 md:p-12 shadow-2xl flex flex-col justify-between min-h-[680px]">
+      <div class="border-b border-slate-800 pb-4 flex items-center justify-between">
+        <h2 class="font-display font-extrabold text-2xl md:text-3xl text-white">
+          Required &amp; Public Datasets Powering AquaVane
+        </h2>
+        <span class="text-xs font-mono text-[#00B4D8]">SLIDE 07 / 07</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-auto py-6 text-sm">
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-6 shadow-xl border-t-8 border-[#00B4D8] space-y-3">
+          <h3 class="font-display font-extrabold text-xl text-slate-900">
+            1. Copernicus ERA5
+          </h3>
+          <div class="font-mono text-xs bg-slate-100 p-2.5 rounded-lg border border-slate-300">
+            <strong>Link:</strong> <a href="https://cds.climate.copernicus.eu/" target="_blank" class="text-[#0077B6] underline">https://cds.climate.copernicus.eu/</a>
+          </div>
+          <p class="text-slate-800 leading-relaxed">
+            <strong>Use:</strong> Historical rainfall and climate data for analysing precipitation patterns.
+          </p>
+        </div>
+
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-6 shadow-xl border-t-8 border-[#2D6A4F] space-y-3">
+          <h3 class="font-display font-extrabold text-xl text-slate-900">
+            2. USGS SRTM
+          </h3>
+          <div class="font-mono text-xs bg-slate-100 p-2.5 rounded-lg border border-slate-300">
+            <strong>Link:</strong> <a href="https://earthexplorer.usgs.gov/" target="_blank" class="text-[#0077B6] underline">https://earthexplorer.usgs.gov/</a>
+          </div>
+          <p class="text-slate-800 leading-relaxed">
+            <strong>Use:</strong> Elevation data for calculating slope, terrain, and water-flow direction.
+          </p>
+        </div>
+
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-6 shadow-xl border-t-8 border-[#2D6A4F] space-y-3">
+          <h3 class="font-display font-extrabold text-xl text-slate-900">
+            3. ESA WorldCover
+          </h3>
+          <div class="font-mono text-xs bg-slate-100 p-2.5 rounded-lg border border-slate-300">
+            <strong>Link:</strong> <a href="https://esa-worldcover.org/en" target="_blank" class="text-[#0077B6] underline">https://esa-worldcover.org/en</a>
+          </div>
+          <p class="text-slate-800 leading-relaxed">
+            <strong>Use:</strong> Land-cover data for identifying vegetation, forests, croplands, and built-up areas.
+          </p>
+        </div>
+
+        <div class="bg-white/95 text-slate-900 rounded-2xl p-6 shadow-xl border-t-8 border-[#00B4D8] space-y-3">
+          <h3 class="font-display font-extrabold text-xl text-slate-900">
+            4. India-WRIS
+          </h3>
+          <div class="font-mono text-xs bg-slate-100 p-2.5 rounded-lg border border-slate-300">
+            <strong>Link:</strong> <a href="https://indiawris.gov.in/wris/#/" target="_blank" class="text-[#0077B6] underline">https://indiawris.gov.in/wris/#/</a>
+          </div>
+          <p class="text-slate-800 leading-relaxed">
+            <strong>Use:</strong> Water-resource data for analysing river networks, drainage systems, and watersheds.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

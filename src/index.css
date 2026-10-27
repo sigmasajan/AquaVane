@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom GIS Command Center Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B132B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1C2541;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 180, 216, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00B4D8;
+}
+
+/* Custom Range Input Styling for MCDA Sliders */
+input[type="range"].gis-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: #1C2541;
+  outline: none;
+}
+
+input[type="range"].gis-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00B4D8;
+  border: 2px solid #0B132B;
+  box-shadow: 0 0 8px rgba(0, 180, 216, 0.65);
+  cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.12s ease;
+}
+
+input[type="range"].gis-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.18);
+  background: #38BDF8;
+}
+
+/* Leaflet Customizations for Dark GIS Theme */
+.leaflet-container {
+  background: #070D1D !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
+
+.leaflet-tooltip.gis-tooltip {
+  background: rgba(11, 19, 43, 0.95) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0, 180, 216, 0.45) !important;
+  border-radius: 8px !important;
+  color: #F8FAFC !important;
+  padding: 8px 10px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7) !important;
+}
+
+.leaflet-tooltip-top.gis-tooltip::before,
+.leaflet-tooltip-bottom.gis-tooltip::before,
+.leaflet-tooltip-left.gis-tooltip::before,
+.leaflet-tooltip-right.gis-tooltip::before {
+  border-top-color: rgba(0, 180, 216, 0.45) !important;
+}
+
+/* Subtle topographic pattern background */
+.topo-pattern {
+  background-image: radial-gradient(rgba(0, 180, 216, 0.07) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
